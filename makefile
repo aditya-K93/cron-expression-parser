@@ -6,9 +6,6 @@ BIN=$(VENV)/bin
 
 all: clean test
 
-check:
-	@[ "${var}" ] && echo "all good" || ( echo "var is not set"; exit 1 )
-
 $(VENV):
 	$(PY) -m venv $(VENV)
 	touch $(VENV)
